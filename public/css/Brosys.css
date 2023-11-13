@@ -1,14 +1,14 @@
-#sect-2{
-    background-color: black;
+.lineheader1{
+    width: 100%;
 }
 .page-brosys{
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
 }
 #brosys1{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
     filter: brightness(.25);
@@ -23,6 +23,13 @@
 }
 
 
+#sect-2 {
+    background-image: url('../images/AssetWeb01Crop.png');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+  }
 .row-2{
     padding: 5rem 0;
 }
@@ -30,7 +37,7 @@
     padding: 3rem 0;
     display: flex;
     flex-direction: column;
-    height: 85vh ;
+    height: 50vh ;
   }
   .content {
     flex: 1;
@@ -44,9 +51,13 @@
     margin-left: 5rem;
     background-color: red;
     color: white;
-    padding: 1rem 2rem;
+    padding: .5rem 1rem;
     width: max-content;
     margin-top: auto;
+    text-decoration: none;
+  }
+  .btn-column p{
+    margin-bottom: 0 !important;
   }
 
 
@@ -58,6 +69,39 @@
     color: white !important;
     text-align: start;
 }
+#svg4{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+#svg4 img:nth-child(1){
+    transform: translate(4.35%, -3.75%);
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+#svg4 img:nth-child(2){
+    transform: translate(37.5%, -15%);
+    height: 75%;
+    width: 75%;
+    object-fit: contain;
+}
+#brosys-sect-3{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(.5);
+}
+@media only screen and (max-width: 768px) {
+    #sect-3{
+        height: 50vh !important;
+    }
+    #brosys-sect-3{
+        height: 50vh;
+    }
+}
 
 
 
@@ -66,11 +110,11 @@
     background-color: rgb(58, 56, 56);
 }
 .title-sect-4{
-    display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
+
 .wrapper{
     padding: 4rem;
 }
@@ -105,7 +149,60 @@
     grid-area: col-4;
 }
 .img-sect-4{
-    width: 50%;
+    width: 50vw;
+}
+@media only screen and (max-width: 768px) {
+    .img-sect-4{
+        width: 100% !important;
+    }
+}
+
+#sect-5{
+    height: 75vh;
+}
+.page-brosys-desc-5{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    color: white !important;
+    text-align: start;
+}
+#svg5{
+    position: absolute;
+    height: 60%;
+    bottom: 0;
+    left: 0;
+}
+#svg5 img{
+    transform: translate(-7.6%, 3.75%);
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+#svg5-1{
+    position: absolute;
+    height: 15%;
+    bottom: 10%;
+    right: 0;
+}
+#svg5-1 img{
+    transform: translate(-7.6%, 3.75%);
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+@media only screen and (max-width: 768px) {
+    #svg5-1{
+        height: 15%;
+        bottom: 2.5%;
+        right: 0;
+    }
+    #svg5-1 img{
+        transform: translate(0, 0);
+        height: 75%;
+        width: 75%;
+        object-fit: contain;
+    }
 }
 
 
@@ -173,4 +270,19 @@
     #grid-4{
         padding: 1rem;
     }
+}
+
+@media only screen and (max-width: 1100px) {
+    #svg4{
+    position: absolute;
+    height: 75%;
+    top: 0; 
+    right: 0;
+}
+#svg4 img{
+    transform: translate(4.35%, -3.75%);
+    height: 75%;
+    width: 100%;
+    object-fit: contain;
+}
 }

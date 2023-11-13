@@ -1,6 +1,6 @@
 #Navbar{
     position: fixed;
-    /* top: 20; */
+    top: 20;
     width: 100%;
     background: none !important;
     z-index: 9999;
