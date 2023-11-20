@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="../css/Brosys.css">
     
 @section('content')
-    <div class="page-brosys">
+    <div class="page-brosys" id="sect-1">
         <img src="{{ asset('..\images\brosys1.jpg') }}" alt="" id="brosys1">
       <div class="page-brosys-desc">
         <h1>BROSYS</h1>
@@ -48,7 +48,7 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, atque?</p>
       </div>
       <div id="svg4" class="text-end">
-        <img class="d-md-block d-none" src="{{ asset('../images/AssetWeb12.svg') }}" alt="Contoh SVG">
+        <img class="d-md-block d-none" src="{{ asset('../images/AssetWeb12.png') }}" alt="Contoh SVG">
         <img class="d-md-none d-block" src="{{ asset('../images/AssetWeb12.svg') }}" alt="Contoh SVG">
       </div>
     </div>
@@ -114,7 +114,7 @@
       </div>
     </div>
 
-    <div class="page-brosys bg-black">
+    <div class="page-brosys bg-black" id="sect-6">
       <div class="sect-top d-block d-lg-flex align-items-center text-white">
         <img src="{{ asset('..\images\logo-brosys.png') }}" alt="" class="img-fluid">
         <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
