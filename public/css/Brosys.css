@@ -280,7 +280,7 @@
     right: 0;
 }
 #svg4 img{
-    transform: translate(4.35%, -3.75%);
+    /* transform: translate(4.35%, -3.75%); */
     height: 75%;
     width: 100%;
     object-fit: contain;
