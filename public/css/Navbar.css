@@ -6,7 +6,17 @@
     z-index: 9999;
 }
 .nav-item a p{
-    color: white !important;
+    color: white;
+}
+
+.nav-active{
+    color: #ff0000; /* warna teks aktif */
+    background-color: #ffff;
+    border-radius: 10px;
+    font-weight: bold; /* tebal pada teks aktif */
+}
+.nav-active .mb-0{
+    color: #ff0000;
 }
 
 .navbar-nav {

@@ -5,20 +5,41 @@
         <span class="navbar-toggler-icon"></span>
       </button> --}}
       <div class="navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-md-5 gap-3">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-md-4 gap-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#sect-1"><p>Home</p></a>
+            <a class="nav-link px-3 py-1 active" aria-current="page" href="#sect-1"><p class="mb-0">Home</p></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#sect-3"><p>Profile</p></a>
+            <a class="nav-link px-3 py-1" href="#sect-3"><p class="mb-0">Profile</p></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#sect-5"><p>Event</p></a>
+            <a class="nav-link px-3 py-1" href="#sect-5"><p class="mb-0">Event</p></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#sect-6"><p>Lorem Ipsum</p></a>
+            <a class="nav-link px-3 py-1" href="#sect-6"><p class="mb-0">Lorem Ipsum</p></a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Dapatkan semua elemen nav-link
+      var navLinks = document.querySelectorAll('.nav-link');
+  
+      // Tambahkan event listener untuk setiap elemen nav-link
+      navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          // Hapus kelas active dari semua elemen nav-link
+          navLinks.forEach(function (innerLink) {
+            innerLink.classList.remove('nav-active');
+          });
+  
+          // Tambahkan kelas nav-active ke elemen yang diklik
+          link.classList.add('nav-active');
+        });
+      });
+    });
+  </script>

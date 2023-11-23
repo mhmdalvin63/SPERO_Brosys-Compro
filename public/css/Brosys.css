@@ -1,4 +1,43 @@
+h1{
+    font-size: calc(60% + 6vmin) !important;
+    margin-bottom: 0 !important;
+}
+h2{
+    font-size: calc(60% + 4vmin) !important;
+    margin-bottom: 0 !important;
+}
+h4{
+    font-size: calc(60% + 2vmin) !important;
+    margin-bottom: 0 !important;
+}
+p{
+    font-size: calc(60% + .75vmin) !important;
+    margin-bottom: 0 !important;
+}
+
+@font-face {
+    font-family: 'Aeromatic';
+    src: url('../images/Aero\ Matics\ Regular.ttf') format('truetype');
+  }
+@font-face {
+    font-family: 'Changes';
+    src: url('../images/Changes.ttf') format('truetype');
+  }
+
+  
+* {
+    font-family: 'Aeromatic', sans-serif;
+  }
+
+
+  .tc{
+    font-family: 'Changes', sans-serif !important;
+  }
+
 .lineheader1{
+    margin-top: -5%;
+    position: absolute;
+    z-index: 999;
     width: 100%;
 }
 .page-brosys{
@@ -20,6 +59,11 @@
     transform: translate(-50%, -50%);
     color: white !important;
     text-align: center;
+}
+.page-brosys-desc p{
+    width: 80%;
+    margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -47,19 +91,46 @@
     padding: 0 5rem;
   }
   .btn-column {
-    border-radius: 10px;
-    margin-left: 5rem;
-    background-color: red;
-    color: white;
-    padding: .5rem 1rem;
+    border-radius: 5px;
+    margin-left: 2.5rem;
+    background-color: white;
+    color: red;
+    padding: 0 1rem;
     width: max-content;
     margin-top: auto;
     text-decoration: none;
   }
-  .btn-column p{
-    margin-bottom: 0 !important;
+  .btn-column-2 {
+    border-radius: 5px;
+    margin-left: 2.5rem;
+    border: 1px solid white;
+    color: red;
+    padding: 0 1rem;
+    width: max-content;
+    margin-top: auto;
+    text-decoration: none;
   }
-
+  .hr-text-bottom {
+    border-top: 2px solid red;
+    margin: 0;
+  }
+  .text-bottom{
+    position: absolute;
+    bottom: 25;
+    right: 0;
+    width: 60%;
+  }
+  .text-bottom-content{
+    color: white;
+    width: 100%;
+  }
+  .garis{
+    position: absolute;
+    bottom: 0;
+    left: 15;
+    transform: translateY(50%);
+    z-index: 3;
+  }
 
 
   .page-brosys-desc-left{
@@ -70,19 +141,22 @@
     text-align: start;
 }
 #svg4{
+    display: flex;
+    justify-content: end;
+    align-items: start;
     position: absolute;
-    height: 100%;
+    height: max-content;
     top: 0;
     right: 0;
 }
 #svg4 img:nth-child(1){
     /* transform: translate(4.35%, 0); */
     height: 100%;
-    width: 100%;
+    width: 75%;
     object-fit: contain;
 }
 #svg4 img:nth-child(2){
-    transform: translate(37.5%, -15%);
+    transform: translate(4.5%, -4.25%);
     height: 75%;
     width: 75%;
     object-fit: contain;
@@ -92,7 +166,33 @@
     height: 100vh;
     width: 100%;
     object-fit: cover;
-    filter: brightness(.5);
+    filter: brightness(.25);
+}
+.perintilan{
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20;
+    left: 10;
+    z-index: 99;
+}
+.perintilan .col-7 p{
+    text-align: center;
+    color: white;
+}
+.hr-sect3 {
+    width: 100%;
+    border-top: 2px solid red;
+    margin: 0;
+  }
+  .perintilan .col-5{
+    display: flex;
+    justify-content: center;
+  }
+@media only screen and (max-width: 600px) {
+    .page-brosys-desc-left p{
+        width: 75%;
+    }
 }
 @media only screen and (max-width: 768px) {
     #sect-3{
@@ -149,7 +249,17 @@
     grid-area: col-4;
 }
 .img-sect-4{
+    position: relative;
     width: 50vw;
+}
+.img-sect-4-double{
+    position: relative;
+}
+.sect-4-label{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
 }
 @media only screen and (max-width: 768px) {
     .img-sect-4{
@@ -160,6 +270,11 @@
 #sect-5{
     height: 75vh;
 }
+.hr-sect-5 {
+    width: 50vw;
+    border-top: 2px solid red;
+    margin: 0;
+  }
 .page-brosys-desc-5{
     position: absolute;
     top: 25%;
@@ -180,16 +295,33 @@
     object-fit: contain;
 }
 #svg5-1{
+    text-align: end;
     position: absolute;
     height: 15%;
     bottom: 10%;
     right: 0;
 }
 #svg5-1 img{
-    transform: translate(-7.6%, 3.75%);
     height: 100%;
-    width: 100%;
+    width: max-content;
     object-fit: contain;
+}
+#svg5-2{
+    position: absolute;
+    height: 15%;
+    bottom: 25%;
+    left: 15%;
+}
+.box1{
+    width: 11.5vw;
+    height: 9vw;
+    background-color: red;
+}
+.box2{
+    transform: translateY(-10%);
+    width: 11.5vw;
+    height: 9vw;
+    background-color: red;
 }
 @media only screen and (max-width: 768px) {
     #svg5-1{
@@ -272,17 +404,11 @@
     }
 }
 
-@media only screen and (max-width: 1100px) {
+/* @media only screen and (max-width: 1100px) {
     #svg4{
     position: absolute;
     height: 75%;
     top: 0; 
     right: 0;
 }
-#svg4 img{
-    /* transform: translate(4.35%, -3.75%); */
-    height: 75%;
-    width: 100%;
-    object-fit: contain;
-}
-}
+} */
