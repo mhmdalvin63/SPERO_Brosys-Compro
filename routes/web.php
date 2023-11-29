@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('brosys');
+    return view('Brosys');
 });
 
 // Route::get('/brosys', function () {

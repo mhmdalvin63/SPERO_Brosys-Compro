@@ -1,14 +1,30 @@
 @extends('Template.Main')
 @section('title_tab', 'Brosys')
 <link rel="stylesheet" href="../css/Brosys.css">
-    
 @section('content')
     <div class="page-brosys" id="sect-1">
-        <img src="{{ asset('..\images\bg1.jpg') }}" alt="" id="brosys1">
-      <div class="page-brosys-desc">
-        <h1 class="tc">BROSYS</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, atque?</p>
-      </div>
+        <div class="slider">
+          {{-- FOREACH IMAGE BANNER SLIDER --}}
+          <div>
+            <img src="{{ asset('..\images\bg1.jpg') }}" alt="" style="position: relative;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            filter: brightness(.25);">
+          </div>
+          {{-- AKHIR FOREACH IMAGE BANNER SLIDER --}}
+          <div>
+            <img src="{{ asset('..\images\logo-brosys.png') }}" alt="" style="position: relative;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            filter: brightness(.25);">
+          </div>
+        </div>
+        <div class="page-brosys-desc">
+          <h1 class="tc">BROSYS</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, atque?</p>
+        </div>
     </div>
 
     <img src="{{ asset('..\images\lineheader4.png') }}" alt="" class="lineheader1">
@@ -166,4 +182,16 @@
       </div>
       <img src="{{ asset('..\images\bg-eras-2.png') }}" alt="" id="brosys6">
     </div>
+    
+    
+    <script>
+      $(document).ready(function(){
+          $('.slider').slick({
+              autoplay: true,
+              // autoplaySpeed: 1000,
+              arrows: true,
+              dots: true
+          });
+      });
+    </script>
 @endsection
