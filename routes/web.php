@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\HeaderController;
 
 /*
@@ -16,9 +17,11 @@ use App\Http\Controllers\HeaderController;
 |
 */
 
-Route::get('/', function () {
-    return view('Brosys');
-});
+// Route::get('/', function () {
+//     return view('Brosys');
+// });
+Route::get('/', [FrontEndController::class, 'index']);
+
 
 Route::get('/admin/site/login', [AuthController::class, 'index'])->name('login');
 Route::post('/admin/site/login/postlogin', [AuthController::class, 'postlogin'])->name('postlogin');

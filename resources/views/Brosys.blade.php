@@ -5,21 +5,16 @@
     <div class="page-brosys" id="sect-1">
         <div class="slider">
           {{-- FOREACH IMAGE BANNER SLIDER --}}
-          <div>
-            <img src="{{ asset('..\images\bg1.jpg') }}" alt="" style="position: relative;
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
-            filter: brightness(.25);">
-          </div>
+          @foreach ($Header as $item)
+            <div>
+              <img src="{{ asset('/image/'.$item->foto) }}" alt="" style="position: relative;
+              width: 100%;
+              height: 100vh;
+              object-fit: cover;
+              filter: brightness(.25);">
+            </div>
+          @endforeach
           {{-- AKHIR FOREACH IMAGE BANNER SLIDER --}}
-          <div>
-            <img src="{{ asset('..\images\logo-brosys.png') }}" alt="" style="position: relative;
-            width: 100%;
-            height: 100vh;
-            object-fit: cover;
-            filter: brightness(.25);">
-          </div>
         </div>
         <div class="page-brosys-desc">
           <h1 class="tc">BROSYS</h1>
