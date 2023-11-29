@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\HeaderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +18,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('Brosys');
+});
+
+Route::get('/admin/site/login', [AuthController::class, 'index'])->name('login');
+Route::post('/admin/site/login/postlogin', [AuthController::class, 'postlogin'])->name('postlogin');
+Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+
+Route::middleware(['admin', 'auth:web', 'PreventBack'])->prefix('/admin')->group(function (){
+    Route::resource('/event', EventController::class);
+    Route::resource('/header', HeaderController::class);
 });
 
 // Route::get('/brosys', function () {
