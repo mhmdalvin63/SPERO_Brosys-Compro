@@ -26,7 +26,7 @@
 
     <div class="page-brosys" id="sect-2">
       {{-- <img src="{{ asset('') }}" alt=""> --}}
-        <div class="row row-2">
+        <div class="row mx-0 row-2">
           <div class="col-lg-6 col-md-12 col-12">
            <div class="col-content mx-5 column text-center text-white">
             <div class="column-content">
