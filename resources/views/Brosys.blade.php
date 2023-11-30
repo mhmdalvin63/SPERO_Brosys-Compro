@@ -22,7 +22,7 @@
         </div>
     </div>
 
-    <img src="{{ asset('..\images\lineheader4.png') }}" alt="" class="lineheader1">
+    <img src="{{ asset('..\images\lineHeader4.png') }}" alt="" class="lineheader1">
 
     <div class="page-brosys" id="sect-2">
       {{-- <img src="{{ asset('') }}" alt=""> --}}
