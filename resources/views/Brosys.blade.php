@@ -68,7 +68,7 @@
       </div>
       <div id="svg4" class="text-end">
         <img class="d-md-block d-none" src="{{ asset('../images/AssetWeb12.png') }}" alt="Contoh SVG">
-        <img class="d-md-none d-block" src="{{ asset('../images/AssetWeb12.svg') }}" alt="Contoh SVG">
+        <img class="d-md-none d-block" src="{{ asset('../images/AssetWeb12.png') }}" alt="Contoh SVG">
       </div>
       <div class="row perintilan">
         <div class="col-7">

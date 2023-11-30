@@ -156,9 +156,9 @@ p{
     object-fit: contain;
 }
 #svg4 img:nth-child(2){
-    transform: translate(4.5%, -4.25%);
-    height: 75%;
-    width: 75%;
+    /* transform: translate(4.5%, -4.25%); */
+    height: 50%;
+    width: 50%;
     object-fit: contain;
 }
 #brosys-sect-3{
