@@ -134,8 +134,21 @@
       <div class="page-brosys-desc-5">
         <h1 class="tc">BROSYS</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, atque?</p>
+
+        <div class="row ps-3 mt-5" id="slider-event">
+          @foreach ($Event as $item)
+            <div class="col-4">
+              <div class="list-event position-relative">
+                <img class="position-relative" src="{{ asset('/image/'.$item->foto) }}" alt="">
+                <div class="list-event-text">
+                  <p>{{ $item->title }}</p>
+                </div>
+              </div>
+            </div>
+          @endforeach
+        </div>
       </div>
-      <div id="svg5" class="text-end">
+      {{-- <div id="svg5" class="text-end">
         <img src="{{ asset('../images/AssetWeb13.svg') }}" alt="Contoh SVG">
       </div>
       <div id="svg5-1">
@@ -145,7 +158,7 @@
       <div id="svg5-2" class="d-flex gap-1">
         <div class="box1"></div>
         <div class="box2"></div>
-      </div>
+      </div> --}}
     </div>
 
     <div class="page-brosys bg-black" id="sect-6">
@@ -188,5 +201,18 @@
               dots: true
           });
       });
+
+      $(document).ready(function(){
+    $('#slider-event').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      // autoplay: true,
+      // autoplaySpeed: 2000,
+      prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+      nextArrow: '<button type="button" class="slick-next">Next</button>',
+      infinite : false,
+      // Opsi lainnya sesuai kebutuhan
+    });
+  });
     </script>
 @endsection

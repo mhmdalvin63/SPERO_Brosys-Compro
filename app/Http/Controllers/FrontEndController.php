@@ -17,7 +17,8 @@ class FrontEndController extends Controller
     public function index()
     {
         $Header = Header::latest()->get();
-        return view('Brosys', compact('Header'));
+        $Event = Event::latest()->get();
+        return view('Brosys', compact('Header', 'Event'));
     }
 
     /**

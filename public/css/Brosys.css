@@ -281,7 +281,53 @@ p{
     left: 5%;
     color: white !important;
     text-align: start;
+    width: 90%;
 }
+.list-event{
+    height: 100%;
+    width: 95%;
+}
+.slick-slide{
+    height: 100%;
+}
+.slick-active{
+    height: 100%;
+}
+.list-event img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(.5);
+}
+.list-event-text{
+    width: 90%;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+.list-event-text p{
+    line-height: 1;
+    width: 100%;
+}
+
+.slick-prev,
+  .slick-next {
+    font-size: 24px;
+    color: #000; /* Warna panah */
+    background-color: #fff; /* Warna latar panah */
+    border: 1px solid #000; /* Garis pinggir panah */
+    border-radius: 50%; /* Bentuk panah menjadi bulat */
+    padding: 10px; /* Ruang di dalam panah */
+    margin: 0 10px; /* Jarak antara panah dan slider */
+    cursor: pointer; /* Tanda kursor ketika diarahkan ke panah */
+  }
+
+  .slick-prev:hover,
+  .slick-next:hover {
+    color: #fff; /* Warna panah saat dihover */
+    background-color: #000; /* Warna latar panah saat dihover */
+  }
+
 #svg5{
     position: absolute;
     height: 60%;
